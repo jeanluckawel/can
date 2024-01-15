@@ -3,39 +3,8 @@
 
 
 <!-- Mirrored from thepixelcurve.com/html/techwix/techwix/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Jan 2024 16:41:17 GMT -->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Techwix - Technology IT Solutions Consultancy HTML5 Template</title>
-    <meta name="robots" content="noindex, follow"/>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
 
-    <!-- CSS
-	============================================ -->
-
-    <!-- Icon Font CSS -->
-    <link rel="stylesheet" href="assets/css/plugins/all.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/flaticon.css">
-
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/aos.css">
-    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
-
-    <!-- Main Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-
-    <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
-    <!-- <link rel="stylesheet" href="assets/css/vendor/plugins.min.css">
-    <link rel="stylesheet" href="assets/css/style.min.css"> -->
-
-</head>
-
+@include('app')
 <body>
 
 <div class="main-wrapper">
@@ -250,7 +219,7 @@
                                     @endphp
                                     <h3 class="title"><a href="">{{ $slug }} </a></h3>
                                     <div class="blog-btn">
-                                        <a class="blog-btn-link" href="">Lire Plus <i
+                                        <a class="blog-btn-link" href="{{ route('index.show', ['blog_id' => $blog->id]) }}">Lire Plus <i
                                                 class="fas fa-long-arrow-alt-right"></i></a>
                                     </div>
                                 </div>
@@ -291,22 +260,7 @@
 </div>
 
 <!-- JS
-============================================ -->
-<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-<script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
 
-<!-- Bootstrap JS -->
-<script src="assets/js/plugins/popper.min.js"></script>
-<script src="assets/js/plugins/bootstrap.min.js"></script>
-
-<!-- Plugins JS -->
-<script src="assets/js/plugins/swiper-bundle.min.js"></script>
-<script src="assets/js/plugins/aos.js"></script>
-<script src="assets/js/plugins/waypoints.min.js"></script>
-<script src="assets/js/plugins/back-to-top.js"></script>
-<script src="assets/js/plugins/jquery.counterup.min.js"></script>
-<script src="assets/js/plugins/appear.min.js"></script>
-<script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
 
 
 <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->

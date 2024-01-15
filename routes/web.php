@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/',[\App\Http\Controllers\BlogController::class,'index'])->name('index');
+Route::get('/blog/{blog_id}',[\App\Http\Controllers\BlogController::class,'show'])->name('index.show');
